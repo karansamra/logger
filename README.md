@@ -2,6 +2,8 @@
 
 Structured [Pino](https://getpino.io) logger with request context, daily file rotation, sensitive-field redaction, and optional Express helpers. Designed to be shared across multiple Node.js backend services.
 
+GitHub repository: [https://github.com/karansamra/logger](https://github.com/karansamra/logger)
+
 ## Log Output Preview
 
 ![Logger output snapshot](https://cdn.jsdelivr.net/npm/@jsingh7/logger@1.0.4/docs/images/logs-snapshot.png)
