@@ -1,6 +1,6 @@
 {
   "name": "@jsingh7/logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Structured Pino logger with request context, daily file rotation, and optional Express helpers — designed for sharing across multiple backend services.",
   "keywords": [
     "logger",

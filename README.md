@@ -4,7 +4,7 @@ Structured [Pino](https://getpino.io) logger with request context, daily file ro
 
 ## Log Output Preview
 
-![Logger output snapshot](docs/images/logs-snapshot.png)
+![Logger output snapshot](https://cdn.jsdelivr.net/npm/@jsingh7/logger@1.0.4/docs/images/logs-snapshot.png)
 
 ---
 
