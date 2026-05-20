@@ -1,0 +1,60 @@
+{
+  "name": "@jsingh7/logger",
+  "version": "1.0.0",
+  "description": "Structured Pino logger with request context, daily file rotation, and optional Express helpers — designed for sharing across multiple backend services.",
+  "keywords": [
+    "logger",
+    "pino",
+    "structured-logging",
+    "express",
+    "request-context",
+    "file-rotation"
+  ],
+  "license": "MIT",
+  "author": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./express": {
+      "types": "./dist/express/index.d.ts",
+      "import": "./dist/express/index.mjs",
+      "require": "./dist/express/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "file-stream-rotator": "^1.0.0",
+    "pino": "^10.1.0"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
